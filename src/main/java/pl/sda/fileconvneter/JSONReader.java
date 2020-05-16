@@ -7,13 +7,25 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class JSONReader implements Reader{
 
     private Path path;
 
     @Override
-    public void read(String inputFilePath) {
+    public List<Map<String, Object>> read(String inputFilePath) {
+        List<Map<String, Object>> result = new ArrayList<>();
+
+        /*
+            wypełnić listę result wartościami w pliku
+            metoda read zwraca zmienną result
+            w klasie Conventer w metodzie convert wyświetlić
+            zwróconą mapę przez metodę read
+         */
+
         try {
 
             path = Paths.get(inputFilePath);
