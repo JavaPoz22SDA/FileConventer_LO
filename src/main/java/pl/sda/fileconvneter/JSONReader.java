@@ -24,6 +24,8 @@ public class JSONReader implements Reader{
             metoda read zwraca zmienną result
             w klasie Conventer w metodzie convert wyświetlić
             zwróconą mapę przez metodę read
+
+            tworzymy analogiczny kod dla plików CSV
          */
 
         try {
@@ -48,5 +50,7 @@ public class JSONReader implements Reader{
         }catch (IOException ex){
             ex.printStackTrace();
         }
+
+        return result;
     }
 }
